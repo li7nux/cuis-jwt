@@ -1,0 +1,9 @@
+server:
+  port: 9966
+demo:
+  security:
+    jwt:
+      tokenExpirationTime: 15 # Number of minutes
+      refreshTokenExpTime: 60 # Minutes
+      tokenIssuer: http://li7nux.com
+      tokenSigningKey: xm8EV6Hy5RMFK4EEACIDAwQus

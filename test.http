@@ -1,0 +1,80 @@
+### login
+POST http://127.0.0.1:9966/api/auth/login
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+    "username": "li7nux@gmail.com"
+}
+
+
+### me
+GET http://127.0.0.1:9966/api/me/ HTTP/1.1  
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsaTdudXhAZ21haWwuY29tIiwic2NvcGVzIjpbIlJPTEVfUFJFTUlVTV9NRU1CRVIiXSwiaXNzIjoiaHR0cDovL2xpN251eC5jb20iLCJpYXQiOjE1MzkxNDAxOTksImV4cCI6MTUzOTE0MTA5OX0.1I03tQqwItjl7fbVRbxQGNpk1vbV7R3o5i0bQo73QGiHF8g-2bP5qzBNYV8r-aM9fGUUTIwa_DTXm5KF4143cw
+Cache-Control: no-cache 
+
+
+### token
+GET http://127.0.0.1:9966/api/auth/token HTTP/1.1  
+Authorization: Bearer xeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsaTdudXhAZ21haWwuY29tIiwic2NvcGVzIjpbIlJPTEVfUkVGUkVTSF9UT0tFTiJdLCJpc3MiOiJodHRwOi8vbGk3bnV4LmNvbSIsImp0aSI6IjUzNGM3Mzk5LTRkMjktNDQyOS05N2UwLTQ4MzBkMDBkYWY0NiIsImlhdCI6MTUzOTE0MDE5OSwiZXhwIjoxNTM5MTQzNzk5fQ.PrGEWh4oQGiMdXPN7T6tL7Df_C3pMpN7FZ6-meexR_98PyNKLuLpbtQwO9wGyY3Fc_IMjNhX1Z3n2yFIdKKiRQ
+Cache-Control: no-cache 
+
+
+
+
+### login
+POST http://127.0.0.1:8001/api/auth/login
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+    "username": "li7nux@gmail.com"
+}
+
+
+### me
+GET http://127.0.0.1:8001/api/me/ HTTP/1.1  
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsaTdudXhAZ21haWwuY29tIiwic2NvcGVzIjpbIlJPTEVfVVNFUiJdLCJpc3MiOiJodHRwOi8vb2xkZHJpdmVyLm1lIiwiaWF0IjoxNTE2NTg5MTQ0LCJleHAiOjE1MTY1ODk1MDR9.55W96tfSH2PQlwywLC8OR0ToZ4UcnhRxPjyK2Lpeu9Ueeo6cogqcQGlFtMACGo9za5KJfb0zhNpuywp0QKfK6w
+Cache-Control: no-cache 
+
+
+### token
+GET http://127.0.0.1:8001/api/auth/token HTTP/1.1  
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsaTdudXhAZ21haWwuY29tIiwic2NvcGVzIjpbIlJPTEVfUkVGUkVTSF9UT0tFTiJdLCJpc3MiOiJodHRwOi8vb2xkZHJpdmVyLm1lIiwianRpIjoiZWQzNWJkMmUtY2VkOC00ZGIxLWJmYjUtODJiMjNiZDFhNzQ4IiwiaWF0IjoxNTE2NTg5MTQ0LCJleHAiOjE1MTY1ODk1MDR9.EX241qxW5EuC2vQjT8RFxxnAHGJulFjIlA3sE8HPdOYvHYv1Eg76kL2LQMy0toZbXFN6ljkhOyEl5dwUus3oqQ
+Cache-Control: no-cache 
+
+### me
+GET http://127.0.0.1:8001/api/skip/ HTTP/1.1  
+
+
+
+### login
+POST http://127.0.0.1:9301/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "li7nux@gmail.com"
+}
+
+
+### me
+GET http://127.0.0.1:9301/api/me/ HTTP/1.1  
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsaTdudXhAZ21haWwuY29tIiwic2NvcGVzIjpbIlJPTEVfVVNFUiJdLCJpc3MiOiJzYW1hbnRoYSIsImlhdCI6MTUxNjU5MDk1MiwiZXhwIjoxNTE2NTkxMzEyfQ.QX7Vdny2AcXiUuU8I9GDcHZLnvY6F2d2scwZUPn_cuu290vZOUDBDzc13NHYRgOskay8Oel7F1ZI1uNyVyZd1A
+
+
+### token
+GET http://127.0.0.1:9301/api/auth/token HTTP/1.1  
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsaTdudXhAZ21haWwuY29tIiwic2NvcGVzIjpbIlJPTEVfUkVGUkVTSF9UT0tFTiJdLCJpc3MiOiJzYW1hbnRoYSIsImp0aSI6IjdlN2RkOGFlLWE3ZTYtNGNkNC05ZjcyLWIwYmU1OGUxNDhhNiIsImlhdCI6MTUxNjU5MDk1MiwiZXhwIjoxNTE2NTkxMzEyfQ.rUKwsuofDdcooGmDzn-t0wvrg4XzHj_zqcAEIzLomPdbxEruRPtRaXgVYsDJrwpirHZeUoLny4Yq4g9MvT69Dw
+
+### me
+GET http://127.0.0.1:9301/api/skip/ HTTP/1.1  
+
+
+### me
+POST http://127.0.0.1:9301/public/adaptation/auth/login/ HTTP/1.1  
+Content-Type: application/json
+
+{
+  "loginId": "zj2005",
+  "password": "123qqq"
+}
