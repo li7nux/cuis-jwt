@@ -1,7 +1,7 @@
 package me.olddriver.cuis.security.auth.ajax;
 
-import me.olddriver.cuis.security.model.role.Role;
 import me.olddriver.cuis.security.model.common.UserContext;
+import me.olddriver.cuis.security.model.role.Role;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.AuthenticationProvider;

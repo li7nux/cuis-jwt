@@ -1,12 +1,12 @@
 package me.olddriver.cuis.controller;
 
-import me.olddriver.cuis.security.model.role.Role;
 import me.olddriver.cuis.security.auth.jwt.extractor.TokenExtractor;
 import me.olddriver.cuis.security.auth.jwt.verifier.TokenVerifier;
 import me.olddriver.cuis.security.config.JwtSettings;
 import me.olddriver.cuis.security.config.WebSecurityConfig;
 import me.olddriver.cuis.security.exception.InvalidJwtToken;
 import me.olddriver.cuis.security.model.common.UserContext;
+import me.olddriver.cuis.security.model.role.Role;
 import me.olddriver.cuis.security.model.token.JwtToken;
 import me.olddriver.cuis.security.model.token.JwtTokenFactory;
 import me.olddriver.cuis.security.model.token.RawAccessJwtToken;

@@ -4,8 +4,8 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import me.olddriver.cuis.security.config.JwtSettings;
-import me.olddriver.cuis.security.model.role.Scopes;
 import me.olddriver.cuis.security.model.common.UserContext;
+import me.olddriver.cuis.security.model.role.Scopes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

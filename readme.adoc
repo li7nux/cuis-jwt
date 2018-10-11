@@ -1,23 +1,50 @@
-### login
+== README
+
+NOTE: 默认端口: 9966;   +
+认证的时候默认没认证密码，可以自行在 `RestLoginProcessingFilter` 中添加密码认证逻辑。
+
+=== 登陆
+
+用户名登陆，获取 `token` 和 `refreshToken`
+
+[source, shell]
+----
 POST http://127.0.0.1:9966/api/auth/login
 Content-Type: application/json
 Cache-Control: no-cache
 
 {
-    "username": "li7nux@gmail.com"
+    "username": "li7nux@gmail.com",
+    "password": "xxx"
 }
+----
 
-### me
-GET http://127.0.0.1:9966/api/me/ HTTP/1.1  
+=== 获取个人信息
+
+通过 `token` 获取个人信息
+
+[source, shell]
+----
+GET http://127.0.0.1:9966/api/me/ HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsaTdudXhAZ21haWwuY29tIiwic2NvcGVzIjpbIlJPTEVfUFJFTUlVTV9NRU1CRVIiXSwiaXNzIjoiaHR0cDovL2xpN251eC5jb20iLCJpYXQiOjE1MzkxNDAxOTksImV4cCI6MTUzOTE0MTA5OX0.1I03tQqwItjl7fbVRbxQGNpk1vbV7R3o5i0bQo73QGiHF8g-2bP5qzBNYV8r-aM9fGUUTIwa_DTXm5KF4143cw
-Cache-Control: no-cache 
+Cache-Control: no-cache
+----
 
-### token
-GET http://127.0.0.1:9966/api/auth/token HTTP/1.1  
+=== 刷新 token
+
+通过 `refreshToken` 刷新 `token`
+
+[source, shell]
+----
+GET http://127.0.0.1:9966/api/auth/token HTTP/1.1
 Authorization: Bearer xeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsaTdudXhAZ21haWwuY29tIiwic2NvcGVzIjpbIlJPTEVfUkVGUkVTSF9UT0tFTiJdLCJpc3MiOiJodHRwOi8vbGk3bnV4LmNvbSIsImp0aSI6IjUzNGM3Mzk5LTRkMjktNDQyOS05N2UwLTQ4MzBkMDBkYWY0NiIsImlhdCI6MTUzOTE0MDE5OSwiZXhwIjoxNTM5MTQzNzk5fQ.PrGEWh4oQGiMdXPN7T6tL7Df_C3pMpN7FZ6-meexR_98PyNKLuLpbtQwO9wGyY3Fc_IMjNhX1Z3n2yFIdKKiRQ
 Cache-Control: no-cache
+----
 
-### skip
+=== 访问无需认证的 url
+
+[source, shell]
+----
 GET http://127.0.0.1:9966/api/skip/ HTTP/1.1
+----
 
-###

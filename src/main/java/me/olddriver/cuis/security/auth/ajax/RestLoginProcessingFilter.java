@@ -62,6 +62,8 @@ public class RestLoginProcessingFilter extends AbstractAuthenticationProcessingF
             throw new AuthenticationServiceException("Username or Password not provided");
         }
 
+        // TODO Verify username password by your custom way
+
         UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword());
 
         return this.getAuthenticationManager().authenticate(token);

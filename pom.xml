@@ -8,8 +8,8 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>cuis-auth</name>
-    <description>Demo project for Spring Boot</description>
+    <name>cuis-jwt</name>
+    <description>Spring boot jwt auth demo</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -65,6 +65,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
